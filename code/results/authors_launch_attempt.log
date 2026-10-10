@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "[workspace]\outputs\code\run_authors_checkpoint.py", line 23, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "[workspace]\outputs\code\run_authors_checkpoint.py", line 15, in main
+    if not torch.cuda.is_available(): raise RuntimeError('CUDA PyTorch is required. Install the CUDA build in a separate environment as described in README.')
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA PyTorch is required. Install the CUDA build in a separate environment as described in README.

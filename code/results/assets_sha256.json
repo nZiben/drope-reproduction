@@ -1,0 +1,17 @@
+{
+  "authors_probe.json": "29bf17fcfb1030d1637441aaa00b4fe3905b5fc5152b4ebfc8c2b49a22ea9872",
+  "data_revision.json": "3f1f046f12875b2fb92a350f57963c0105826809ae6b8977f7d8d555de5b4b15",
+  "authors\\config.json": "53653c52627b86eabec63ecbb145a45fd38f09a9d3d39ca539f9b2e76afeeed0",
+  "authors\\drope.py": "94badaa3326c5740115042e66826a3fa5345931309c0c18b953adae4ef6cf384",
+  "authors\\model.safetensors.index.json": "5bd69dd5b64cd6e0aec763e08dbe24ad96d1b1ad2c86e5e5a74dc5a0dc4ce910",
+  "data\\test.parquet": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91",
+  "data\\train.parquet": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7",
+  "smol\\config.json": "fe61811079ce3d217e9ffda059c4880f26290e6ec428bb1b4454b7a60e0a231e",
+  "smol\\generation_config.json": "d0df27778d7caa8acc0c2d8eb5cfc11135da6226dbae8c12cc85d0ce6067faaa",
+  "smol\\merges.txt": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+  "smol\\model.safetensors": "e91f05d8506ee5efbd8c0fbfc1799c49af2b2f2cce824bc2d801d5af2a716cc2",
+  "smol\\special_tokens_map.json": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3",
+  "smol\\tokenizer.json": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+  "smol\\tokenizer_config.json": "238ad6b60d48e471624ea70bc79e92f2611844d5016471fee8c167854bcb98e8",
+  "smol\\vocab.json": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+}

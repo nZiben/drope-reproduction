@@ -1,0 +1,6 @@
+transformers==4.56.2
+pyarrow==21.0.0
+numpy==2.2.6
+safetensors==0.6.2
+tokenizers==0.22.1
+huggingface-hub==0.35.1

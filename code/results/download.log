@@ -1,0 +1,37 @@
+GET https://huggingface.co/SakanaAI/Llama-2-7b-hf-DroPE/resolve/02a73325b6ed83e2fb951d68b41e50b47a258785/config.json
+DONE config.json 834 0.68
+GET https://huggingface.co/SakanaAI/Llama-2-7b-hf-DroPE/resolve/02a73325b6ed83e2fb951d68b41e50b47a258785/model.safetensors.index.json
+DONE model.safetensors.index.json 23986 0.61
+GET https://huggingface.co/SakanaAI/Llama-2-7b-hf-DroPE/resolve/02a73325b6ed83e2fb951d68b41e50b47a258785/drope.py
+DONE drope.py 8144 0.58
+{
+  "model": "SakanaAI/Llama-2-7b-hf-DroPE",
+  "revision": "02a73325b6ed83e2fb951d68b41e50b47a258785",
+  "scope": "configuration + first 1MiB of first weight shard, not full inference",
+  "weight_bytes": 13476831232,
+  "http_status": 206,
+  "bytes_read": 1048576,
+  "elapsed_s": 2.919,
+  "prefix_sha256": "22220c60fb46c98fabb2c7c1e9644dafbefcc209cb95a16fac6ad74ca4527294",
+  "status": "checkpoint_access_verified; full model not downloaded"
+}
+GET https://huggingface.co/HuggingFaceTB/SmolLM-360M/resolve/59f7ef243ee09a72cbc14cb054393a3e3b771d41/config.json
+DONE config.json 725 0.33
+GET https://huggingface.co/HuggingFaceTB/SmolLM-360M/resolve/59f7ef243ee09a72cbc14cb054393a3e3b771d41/generation_config.json
+DONE generation_config.json 111 0.57
+GET https://huggingface.co/HuggingFaceTB/SmolLM-360M/resolve/59f7ef243ee09a72cbc14cb054393a3e3b771d41/tokenizer.json
+DONE tokenizer.json 2104556 0.9
+GET https://huggingface.co/HuggingFaceTB/SmolLM-360M/resolve/59f7ef243ee09a72cbc14cb054393a3e3b771d41/tokenizer_config.json
+DONE tokenizer_config.json 3685 0.62
+GET https://huggingface.co/HuggingFaceTB/SmolLM-360M/resolve/59f7ef243ee09a72cbc14cb054393a3e3b771d41/special_tokens_map.json
+DONE special_tokens_map.json 831 0.62
+GET https://huggingface.co/HuggingFaceTB/SmolLM-360M/resolve/59f7ef243ee09a72cbc14cb054393a3e3b771d41/merges.txt
+DONE merges.txt 466391 0.56
+GET https://huggingface.co/HuggingFaceTB/SmolLM-360M/resolve/59f7ef243ee09a72cbc14cb054393a3e3b771d41/vocab.json
+DONE vocab.json 800662 0.71
+GET https://huggingface.co/HuggingFaceTB/SmolLM-360M/resolve/59f7ef243ee09a72cbc14cb054393a3e3b771d41/model.safetensors
+DONE model.safetensors 1447317080 272.34
+GET https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/train-00000-of-00001.parquet
+DONE train.parquet 6357543 2.14
+GET https://huggingface.co/datasets/Salesforce/wikitext/resolve/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/test-00000-of-00001.parquet
+DONE test.parquet 732610 1.69

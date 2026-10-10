@@ -1,0 +1,142 @@
+{
+  "scope": "structural reproduction + small-budget SmolLM ablation, not full paper reproduction",
+  "seed": 42,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.8.0+cpu",
+    "transformers": "4.56.2",
+    "device": "cpu",
+    "threads": 8,
+    "cuda_available": false
+  },
+  "structural": {
+    "nope_uniform_attention_max_error": 0.0,
+    "rope_uniform_attention_max_error": 0.004315972328186035,
+    "nope_hidden_spread": 4.76837158203125e-07,
+    "causal_prefix_max_error": 0.0,
+    "q_gradient_max_abs": 1.3901085837986216e-10,
+    "passed": true
+  },
+  "dataset": {
+    "dataset": "Salesforce/wikitext",
+    "revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+  },
+  "model": {
+    "name": "HuggingFaceTB/SmolLM-360M",
+    "revision": "59f7ef243ee09a72cbc14cb054393a3e3b771d41"
+  },
+  "data_protocol": {
+    "training_split": "wikitext-2-raw-v1/train",
+    "evaluation_split": "wikitext-2-raw-v1/test",
+    "evaluation": "first contiguous token prefix, one sequence per length, teacher-forced NLL. Same prefixes in all modes. No LongBench/NIAH.",
+    "train_token_count": 2554857,
+    "test_token_count": 303267
+  },
+  "parameter_count": 361821120,
+  "base_rope": [
+    {
+      "context_tokens": 256,
+      "target_tokens": 255,
+      "nll": 3.0994508266448975,
+      "perplexity": 22.18576410480264,
+      "seconds": 0.595
+    },
+    {
+      "context_tokens": 2048,
+      "target_tokens": 2047,
+      "nll": 2.2732200622558594,
+      "perplexity": 9.710619323089986,
+      "seconds": 3.086
+    },
+    {
+      "context_tokens": 4096,
+      "target_tokens": 4095,
+      "nll": 4.145657539367676,
+      "perplexity": 63.15913787063566,
+      "seconds": 8.327
+    }
+  ],
+  "dropped_without_recalibration": [
+    {
+      "context_tokens": 256,
+      "target_tokens": 255,
+      "nll": 5.598753929138184,
+      "perplexity": 270.0896468169583,
+      "seconds": 0.312
+    },
+    {
+      "context_tokens": 2048,
+      "target_tokens": 2047,
+      "nll": 6.197790622711182,
+      "perplexity": 491.661574307346,
+      "seconds": 2.953
+    },
+    {
+      "context_tokens": 4096,
+      "target_tokens": 4095,
+      "nll": 6.294407367706299,
+      "perplexity": 541.534820254616,
+      "seconds": 8.295
+    }
+  ],
+  "recalibration": {
+    "steps": 16,
+    "sequence_length": 256,
+    "batch_size": 1,
+    "tokens": 4096,
+    "optimizer": "AdamW",
+    "learning_rate": 3e-05,
+    "weight_decay": 0.1,
+    "qknorm": false,
+    "schedule": "constant",
+    "note": "micro-budget and different data from the paper"
+  },
+  "training_seconds": 31.207,
+  "training_curve": [
+    6.46589994430542,
+    6.51790714263916,
+    5.760979175567627,
+    6.278236389160156,
+    6.518978595733643,
+    5.851785182952881,
+    6.1012115478515625,
+    5.915704250335693,
+    5.59561824798584,
+    5.637183666229248,
+    5.329422950744629,
+    5.249074935913086,
+    5.276724338531494,
+    5.813305854797363,
+    5.857413291931152,
+    5.3432488441467285
+  ],
+  "micro_recalibrated": [
+    {
+      "context_tokens": 256,
+      "target_tokens": 255,
+      "nll": 4.905032634735107,
+      "perplexity": 134.96731455749827,
+      "seconds": 0.325
+    },
+    {
+      "context_tokens": 2048,
+      "target_tokens": 2047,
+      "nll": 5.555225372314453,
+      "perplexity": 258.58523590704834,
+      "seconds": 3.684
+    },
+    {
+      "context_tokens": 4096,
+      "target_tokens": 4095,
+      "nll": 5.691176891326904,
+      "perplexity": 296.2420602738754,
+      "seconds": 7.952
+    }
+  ],
+  "generation_smoke_test": {
+    "prompt": "The capital of France is",
+    "output": "The capital of France is Paris, the capital of the department of the region of the Paris, the Paris, the region of the Paris, the",
+    "max_new_tokens": 24
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "scope": "structural reproduction + small-budget SmolLM ablation, not full paper reproduction",
+  "seed": 42,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.8.0+cpu",
+    "transformers": "4.56.2",
+    "device": "cpu",
+    "threads": 8,
+    "cuda_available": false
+  },
+  "structural": {
+    "nope_uniform_attention_max_error": 0.0,
+    "rope_uniform_attention_max_error": 0.004315972328186035,
+    "nope_hidden_spread": 4.76837158203125e-07,
+    "causal_prefix_max_error": 0.0,
+    "q_gradient_max_abs": 1.3901085837986216e-10,
+    "passed": true
+  }
+}
+`torch_dtype` is deprecated! Use `dtype` instead!
+BASELINE
+EVAL {"context_tokens": 256, "target_tokens": 255, "nll": 3.0994508266448975, "perplexity": 22.18576410480264, "seconds": 0.595}
+EVAL {"context_tokens": 2048, "target_tokens": 2047, "nll": 2.2732200622558594, "perplexity": 9.710619323089986, "seconds": 3.086}
+EVAL {"context_tokens": 4096, "target_tokens": 4095, "nll": 4.145657539367676, "perplexity": 63.15913787063566, "seconds": 8.327}
+DROPPED
+EVAL {"context_tokens": 256, "target_tokens": 255, "nll": 5.598753929138184, "perplexity": 270.0896468169583, "seconds": 0.312}
+EVAL {"context_tokens": 2048, "target_tokens": 2047, "nll": 6.197790622711182, "perplexity": 491.661574307346, "seconds": 2.953}
+EVAL {"context_tokens": 4096, "target_tokens": 4095, "nll": 6.294407367706299, "perplexity": 541.534820254616, "seconds": 8.295}
+TRAIN 1 6.46589994430542
+TRAIN 2 6.51790714263916
+TRAIN 3 5.760979175567627
+TRAIN 4 6.278236389160156
+TRAIN 5 6.518978595733643
+TRAIN 6 5.851785182952881
+TRAIN 7 6.1012115478515625
+TRAIN 8 5.915704250335693
+TRAIN 9 5.59561824798584
+TRAIN 10 5.637183666229248
+TRAIN 11 5.329422950744629
+TRAIN 12 5.249074935913086
+TRAIN 13 5.276724338531494
+TRAIN 14 5.813305854797363
+TRAIN 15 5.857413291931152
+TRAIN 16 5.3432488441467285
+RECALIBRATED
+EVAL {"context_tokens": 256, "target_tokens": 255, "nll": 4.905032634735107, "perplexity": 134.96731455749827, "seconds": 0.325}
+EVAL {"context_tokens": 2048, "target_tokens": 2047, "nll": 5.555225372314453, "perplexity": 258.58523590704834, "seconds": 3.684}
+EVAL {"context_tokens": 4096, "target_tokens": 4095, "nll": 5.691176891326904, "perplexity": 296.2420602738754, "seconds": 7.952}
+FINISHED outputs\code\results\local.json

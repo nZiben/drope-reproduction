@@ -1,0 +1,21 @@
+{
+  "scope": "structural reproduction + small-budget SmolLM ablation, not full paper reproduction",
+  "seed": 42,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.8.0+cpu",
+    "transformers": "4.56.2",
+    "device": "cpu",
+    "threads": 8,
+    "cuda_available": false
+  },
+  "structural": {
+    "nope_uniform_attention_max_error": 0.0,
+    "rope_uniform_attention_max_error": 0.004315972328186035,
+    "nope_hidden_spread": 4.76837158203125e-07,
+    "causal_prefix_max_error": 0.0,
+    "q_gradient_max_abs": 1.3901085837986216e-10,
+    "passed": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "provenance": "Reported by Gelberg et al., arXiv:2512.12167v1, Tables 1-3. Not measured locally.",
+  "source": "https://arxiv.org/html/2512.12167v1",
+  "table1": {
+    "columns": ["Multi-Query", "Multi-Key", "Multi-Value"],
+    "RoPE": [0.0, 0.0, 0.0],
+    "RoPE-NTK": [21.1, 19.4, 16.5],
+    "YaRN": [17.8, 0.5, 14.6],
+    "NoPE": [9.2, 36.2, 21.4],
+    "DroPE": [28.0, 41.6, 23.3]
+  },
+  "table2": {
+    "columns": ["MultiFieldQA", "MuSiQue", "GovReport", "LCC", "NIAH", "Avg"],
+    "SmolLM": [4.03, 0.40, 4.48, 5.99, 0.0, 2.98],
+    "PI": [13.68, 2.45, 5.67, 11.52, 0.0, 6.66],
+    "RoPE-NTK": [18.87, 4.89, 23.71, 8.26, 29.84, 17.11],
+    "YaRN": [20.78, 4.77, 15.03, 10.87, 48.25, 19.94],
+    "DroPE": [29.33, 7.93, 21.87, 18.56, 74.92, 30.52]
+  },
+  "table3_llama2_7b": {
+    "columns": ["MultiFieldQA", "MuSiQue", "GovReport", "Avg"],
+    "Base": [17.26, 10.43, 32.41, 20.03],
+    "RoPE-NTK": [21.81, 10.91, 32.91, 21.88],
+    "YaRN": [23.13, 7.65, 26.65, 19.14],
+    "DroPE": [25.90, 12.88, 39.47, 26.08]
+  }
+}

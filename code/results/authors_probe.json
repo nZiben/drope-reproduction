@@ -1,0 +1,11 @@
+{
+  "model": "SakanaAI/Llama-2-7b-hf-DroPE",
+  "revision": "02a73325b6ed83e2fb951d68b41e50b47a258785",
+  "scope": "configuration + first 1MiB of first weight shard, not full inference",
+  "weight_bytes": 13476831232,
+  "http_status": 206,
+  "bytes_read": 1048576,
+  "elapsed_s": 2.919,
+  "prefix_sha256": "22220c60fb46c98fabb2c7c1e9644dafbefcc209cb95a16fac6ad74ca4527294",
+  "status": "checkpoint_access_verified; full model not downloaded"
+}
