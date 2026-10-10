@@ -6,7 +6,7 @@
 
 | Требуемый материал | Файл |
 | --- | --- |
-| Презентация с объяснением статьи, 8 кратких слайдов | [DroPE_presentation.pptx](DroPE_presentation.pptx) |
+| Презентация с объяснением статьи, 7 кратких слайдов | [DroPE_presentation.pptx](DroPE_presentation.pptx) |
 | Отчет о воспроизведении, 5 страниц | [DroPE_report.pdf](DroPE_report.pdf) |
 | Код с инструкциями по запуску | [Папка code](code/) · [Инструкция](code/README.md) |
 | Архив кода, конфигураций и логов | [DroPE_code.zip](DroPE_code.zip) |
